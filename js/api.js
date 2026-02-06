@@ -1,4 +1,4 @@
-const URL_BASE = window.location.hostname === "localhost" ? "http://localhost:3002" : "https://hub-tarefas-back-end.onrender.com/";
+const URL_BASE = window.location.hostname === "localhost" ? "http://localhost:3002" : "https://hub-tarefas-back-end.onrender.com";
 
 const apiTarefas = {
     async buscarTarefas() {
