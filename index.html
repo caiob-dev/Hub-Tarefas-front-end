@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD de tarefas</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <main>
+        <header class="cabecalho">
+            <img src="./assets/img/logo.png" alt="Tecboard logo" />
+        </header>
+        <section class="hero">
+            <img src="./assets/img/hero.png" alt="Imagem de fundo" />
+        </section>
+
+        <section>
+            <form id="formulario-tarefa" class="formulario">
+
+                <h2>Preencha uma tarefa:</h2>
+                <fieldset class="campo">
+                    <input type="hidden" id="tarefa-id" />
+                    <label for="nome">Qual é o nome da tarefa?</label>
+                    <input type="text" id="nome" placeholder="Limpar casa">
+                </fieldset>
+
+                <fieldset class="campo">
+                    <label for="prioridade">Digite a prioridade da tarefa:</label>
+                    <input type="text" id="prioridade" placeholder="Alta ou baixa">
+                </fieldset>
+
+                <div class="botoes">
+                    <button type="submit" class="botao-salvar">Adicionar</button>
+                    <button type="button" class="botao-cancelar">Cancelar</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="lista-tarefas-container" class="lista-tarefas-itens">
+            <h3>Minhas tarefas</h3>
+
+            <div class="msgOculta">
+                <img src="assets/img/lista-vazia.png" alt="Lista vazia">
+                <p id="msgOculta">Que tal adicionar uma tarefa aqui? Ainda não tem nada</p>
+            </div>
+
+            <ul id="lista-tarefas" class="ul-tarefas"></ul>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p id="">
+            2026 &copy; Todos os direitos reservados - Caio
+        </p>
+    </footer>
+
+    <script type="module" src="js/api.js"></script>
+    <script type="module" src="js/ui.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

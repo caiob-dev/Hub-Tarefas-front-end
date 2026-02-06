@@ -1,0 +1,54 @@
+.formulario {
+    width: 384px;
+    margin: 64px auto;
+    padding: 16px 28px 32px;
+    background-color: var(--background-form-tarefa);
+    border-radius: 16px;
+    max-width: 90%;
+}
+
+.formulario h2 {
+   font-size: 22px;
+   line-height: 125%;
+}
+
+.campo{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.campo label {
+    font-size: 18px;
+}
+
+.campo input {
+    padding: 8px 16px;
+    background: transparent;
+    color: var(--branco);
+    border: 1px solid var(--cinza-medio);
+}
+
+.campo input::placeholder {
+    color: var(--branco);
+}
+
+.botoes {
+   display: flex;
+   gap: 20px;
+   flex-direction: row;
+   justify-content: center;
+   padding-top: 16px;
+  
+}
+
+.botoes button {
+    background-color: var(--background-verde);
+    color: #000;
+    padding: 8px 16px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+}

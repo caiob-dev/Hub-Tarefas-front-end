@@ -1,0 +1,15 @@
+:root {
+    --background-color: #06151A;
+    --branco: #ffffff;
+    --background-form-tarefa: #212121;
+    --background-verde: #17D9B1;
+    --background-verde-2: #0f6e5bcc;
+    --cinza-medio: #4A4949;
+}
+
+body{
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--branco);
+    font-family: "Work Sans", sans-serif;
+}
